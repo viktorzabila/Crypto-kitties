@@ -1,0 +1,32 @@
+@import "../../index.scss";
+
+.sort {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px;
+  @include tablets {
+    max-width: 350px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  &__title {
+    font-family: "Oswald-Bold";
+  }
+  &__el {
+    cursor: pointer;
+    font-family: "Oswald-Medium";
+    margin: 0 5px;
+  }
+  &__el:hover {
+    transition: 0.3s;
+    color: purple;
+    font-family: "Oswald-Medium";
+  }
+}
+
+.active {
+  color: purple;
+  cursor: pointer;
+  font-family: "Oswald-Medium";
+}
